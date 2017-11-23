@@ -1,0 +1,166 @@
+.main {
+    width: 980px;
+    margin: 0 auto;
+    padding: 2rem 0 3.5rem 0;
+
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 59%;
+
+    &__title {
+        padding: 4rem 0 2.5rem;
+        font-size: 1.9rem;
+        line-height: 3.5rem;
+        font-weight: bold;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        padding: 2rem 0 1rem;
+
+        &-icon {
+            width: 5rem;
+            margin-right: 2.5rem;
+        }
+
+        &-bold {
+            font-weight: bold;
+        }
+
+        &-lighter {
+            color: $color-grey-dark;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.signup {
+    margin-top: -1rem;
+
+    &__title {
+    
+        &-big {
+        font-size: 3.8rem;
+        font-weight: bold;
+        }
+
+        &-small {
+            font-size: 1.9rem;
+            font-weight: 400;
+            margin: -1rem 0 1.4rem;
+        }
+    }
+
+    &__form {
+
+        &-name {
+
+            display: flex;
+
+            &-first {
+                margin-right: .5rem;
+            }
+
+            &-last {
+                margin-left: .5rem;
+            }
+        }
+
+        &-input {
+            width: 100%;
+            margin: .6rem 0;
+            font-size: 1.8rem;
+            color: $color-grey-dark;
+            padding: .8rem 1rem;
+            border-radius: .5rem;
+            border: 1px solid $color-blue-light;
+        }
+
+        &-birthday {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin: .5rem 0 .8rem 0;
+        }
+
+        &-require-bd {
+            text-decoration: none;
+            font-size: 1.1rem;
+            max-width: 15rem;
+            color: $color-blue-dark;
+            margin-top: -.6rem;
+            line-height: 1.4;
+            margin-left: 1rem;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-radio-btn {
+            margin: 1rem 0;
+            font-size: 1.8rem;
+        
+            & input {
+                margin: 0 .2rem 0 1rem;;
+            }
+        }
+
+        &-agreement {
+            width: 78%;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            color: $color-grey-dark;
+            margin: 1rem 0 2rem 0;
+
+            &-paragraph > a {
+                text-decoration: none;
+                color: $color-blue-dark;
+            } 
+            
+            &-paragraph > a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-btn {
+            background-color: $color-button;
+            color: $color-white;
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,.5);
+            padding: .8rem 3.2rem;
+            border: 1px solid $color-grey-dark;
+            border-radius: 5px;
+        }
+
+        &-btn:hover {
+            background-image: linear-gradient($color-button-gradient, $color-button);
+        }
+    }
+
+    &__business-page {
+        margin: 2rem 0 1rem;
+        border-top: 1px solid $color-grey-light;
+        padding-top: 1rem;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: $color-grey-dark;
+
+        & a {
+            color: $color-blue-dark-2;
+            text-decoration: none;
+        }
+
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,285 @@
+/*
+Desktop first approch
+
+0 - 600px:        Phone
+600 - 900px:      Tablet portrait
+900 - 1200px:     Tablet landscape
+1200 - 1800px:    Where the normal styles apply
+1800px and more:  Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  background-color: #edf0f5; }
+
+input:focus {
+  outline: none; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333; }
+
+.u-width {
+  width: 7.4rem; }
+
+.u-padding-s {
+  padding: 0 1rem 0 1rem; }
+
+.u-padding-m {
+  padding: 0 1.6rem 0 1rem; }
+
+.u-padding-l {
+  padding: 0 2.4rem 0 1rem; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown__btn {
+    height: 3rem;
+    background-color: #fff;
+    padding: 0.2rem .8rem;
+    border: 1px solid #5a7bb9;
+    display: inline-block; }
+    .dropdown__btn:focus ~ ul {
+      display: inline-block; }
+    .dropdown__btn::after {
+      content: " \25BE"; }
+  .dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #5a7bb9;
+    list-style: none;
+    font-size: 1.2rem;
+    top: 3rem;
+    left: 0; }
+    .dropdown ul > li:hover {
+      background-color: #5a7bb9;
+      color: #fff; }
+
+.main {
+  width: 980px;
+  margin: 0 auto;
+  padding: 2rem 0 3.5rem 0;
+  display: flex; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 59%; }
+  .content__title {
+    padding: 4rem 0 2.5rem;
+    font-size: 1.9rem;
+    line-height: 3.5rem;
+    font-weight: bold; }
+  .content__details {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 2rem 0 1rem; }
+    .content__details-icon {
+      width: 5rem;
+      margin-right: 2.5rem; }
+    .content__details-bold {
+      font-weight: bold; }
+    .content__details-lighter {
+      color: #777;
+      margin-left: 1rem; }
+
+.signup {
+  margin-top: -1rem; }
+  .signup__title-big {
+    font-size: 3.8rem;
+    font-weight: bold; }
+  .signup__title-small {
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: -1rem 0 1.4rem; }
+  .signup__form-name {
+    display: flex; }
+    .signup__form-name-first {
+      margin-right: .5rem; }
+    .signup__form-name-last {
+      margin-left: .5rem; }
+  .signup__form-input {
+    width: 100%;
+    margin: .6rem 0;
+    font-size: 1.8rem;
+    color: #777;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #acc5eb; }
+  .signup__form-birthday {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: .5rem 0 .8rem 0; }
+  .signup__form-require-bd {
+    text-decoration: none;
+    font-size: 1.1rem;
+    max-width: 15rem;
+    color: #5a7bb9;
+    margin-top: -.6rem;
+    line-height: 1.4;
+    margin-left: 1rem;
+    display: inline-block;
+    vertical-align: middle; }
+    .signup__form-require-bd:hover {
+      text-decoration: underline; }
+  .signup__form-radio-btn {
+    margin: 1rem 0;
+    font-size: 1.8rem; }
+    .signup__form-radio-btn input {
+      margin: 0 .2rem 0 1rem; }
+  .signup__form-agreement {
+    width: 78%;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #777;
+    margin: 1rem 0 2rem 0; }
+    .signup__form-agreement-paragraph > a {
+      text-decoration: none;
+      color: #5a7bb9; }
+    .signup__form-agreement-paragraph > a:hover {
+      text-decoration: underline; }
+  .signup__form-btn {
+    background-color: #69a74e;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    padding: .8rem 3.2rem;
+    border: 1px solid #777;
+    border-radius: 5px; }
+  .signup__form-btn:hover {
+    background-image: linear-gradient(#87c772, #69a74e); }
+  .signup__business-page {
+    margin: 2rem 0 1rem;
+    border-top: 1px solid #d1d1d1;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #777; }
+    .signup__business-page a {
+      color: #163f92;
+      text-decoration: none; }
+    .signup__business-page a:hover {
+      text-decoration: underline; }
+
+.footer {
+  background-color: #fff;
+  border-top: #d1d1d1;
+  padding-bottom: 2rem; }
+  .footer__content {
+    width: 980px;
+    margin: 0 auto; }
+    .footer__content-links:last-of-type {
+      border-bottom: none; }
+    .footer__content-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid #d1d1d1; }
+      .footer__content-links-li {
+        font-size: 1.2rem;
+        margin-right: 1rem; }
+        .footer__content-links-li > a {
+          color: #5a7bb9;
+          text-decoration: none; }
+        .footer__content-links-li > a:hover {
+          text-decoration: underline; }
+        .footer__content-links-li > a > button {
+          color: #777;
+          font-weight: 600;
+          font-size: 2rem;
+          padding: 0 1rem; }
+
+.active {
+  color: inherit; }
+
+.header {
+  height: 82px;
+  background-color: #3b5998;
+  border: 1px solid #163f92;
+  color: #fff; }
+  .header__content {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+
+.logo-box {
+  margin: 0 auto 0 0;
+  position: relative; }
+  .logo-box__title {
+    margin-top: 1.8rem;
+    margin-left: -2.4rem; }
+  .logo-box__name {
+    position: absolute;
+    font-size: 2.6rem;
+    top: 3rem; }
+
+.hide {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
+.login__form {
+  display: flex;
+  font-size: 1.2rem; }
+  .login__form-email *,
+  .login__form-password * {
+    display: block;
+    margin-right: 1.6rem;
+    padding: 0.2rem;
+    width: 148px; }
+  .login__form-input {
+    border: 1px solid #163f92; }
+  .login__form-retrieve {
+    text-decoration: none;
+    color: #acc5eb; }
+  .login__form-retrieve:hover {
+    text-decoration: underline; }
+  .login__form-btn {
+    background-color: #5a7bb9;
+    border: 1px solid #163f92;
+    color: #fff;
+    align-self: center;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding: .25rem .7rem;
+    text-decoration: none;
+    border-radius: .1rem;
+    transition: all .1s; }
+  .login__form-btn:hover {
+    background-color: transparent; }

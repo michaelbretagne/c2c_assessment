@@ -1,0 +1,41 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    &__btn {
+        height: 3rem;
+        background-color: $color-white;
+        padding: 0.2rem .8rem;
+        border: 1px solid $color-blue-dark;
+        display: inline-block;
+        
+        &:focus ~ ul {
+            display: inline-block;
+        }
+
+        &::after {
+            content: " \25BE";
+        }
+    }
+
+    & ul {
+        display: none;
+        position: absolute;
+        background-color: $color-white;
+        border: 1px solid $color-blue-dark;
+        list-style: none;
+        font-size: 1.2rem;
+        top: 3rem;
+        left: 0;
+
+
+        & > li:hover {
+            background-color: $color-blue-dark;
+            color: $color-white;
+        }
+
+        &-month:hover {
+        
+        }
+    }
+}

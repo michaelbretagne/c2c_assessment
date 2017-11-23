@@ -1,0 +1,50 @@
+.footer {
+    background-color: $color-white;
+    border-top: $color-grey-light;
+    padding-bottom: 2rem;
+
+    &__content {
+        width: 980px;
+        margin: 0 auto;
+    
+        &-links:last-of-type {
+            border-bottom: none;
+        }
+
+        &-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 1rem 0;
+            border-bottom: 1px solid $color-grey-light;
+
+            &-li {
+                font-size: 1.2rem;
+                margin-right: 1rem;
+
+                & > a {
+                    color: $color-blue-dark;
+                    text-decoration: none;
+                }
+
+                & > a:hover {
+                    text-decoration: underline;
+                }
+
+                & > a > button {
+                    color: $color-grey-dark;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    padding: 0 1rem;
+                }
+            }
+
+        }
+        
+    }
+}
+
+.active {
+    color: inherit;
+}

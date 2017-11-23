@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="#">
+
+    <title>Facebook - Log In or Sign Up</title>
+</head>
+
+<body>
+    <!-- Begining of header -->
+    <header class="header">
+        <div class="header__content">
+            <!-- Logo -->
+            <div class="logo-box" id="logo-box">
+                <img src="./img/facebook-logo-min.png" class="logo-box__title active" id="logo" alt="facebook"></img>
+                <h1 class="logo-box__name hide" id="name">Michael Donal</h1>
+            </div>
+
+            <!-- Login form -->
+            <div class="login">
+                <form action="submit" class="login__form">
+                    <div class="login__form-email">
+                        <label for="email">Email or Phone</label>
+                        <input type="email" name="email" class="login__form-input" />
+                    </div>
+                    <div class="login__form-password">
+                        <label for="password">Password</label>
+                        <input type="password" name="paswword" class="login__form-input" />
+                        <a class="login__form-retrieve" href="#" target="_blank">Forgot account?</a>
+                    </div>
+                    <button class="login__form-btn">Log In</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Begining of main content -->
+    <main class="main">
+
+        <!-- Left section -->
+        <section class="content">
+            <div class="content__title">
+                <h2>Connect with friends and the
+                    <br> world around you on Facebook.
+                </h2>
+            </div>
+            <div class="content__details">
+                <img src="./img/icon-1.png" alt="Icon 1" class="content__details-icon">
+                <span class="content__details-bold">See photos and updates </span>
+                <span class="content__details-lighter">from friends in News Feed.</span>
+            </div>
+            <div class="content__details">
+                <img src="./img/icon-2.png" alt="Icon 2" class="content__details-icon">
+                <span class="content__details-bold">Share what's new </span>
+                <span class="content__details-lighter">in your life on your Timeline.</span>
+            </div>
+            <div class="content__details">
+                <img src="./img/icon-3.png" alt="Icon 3" class="content__details-icon">
+                <span class="content__details-bold">Find more </span>
+                <span class="content__details-lighter"> of what you're looking for with Facebook Search.</span>
+            </div>
+        </section>
+
+        <!-- Right section -->
+        <aside class="signup">
+            <div class="signup__title">
+                <h1 class="signup__title-big">Sign Up</h1>
+                <h3 class="signup__title-small">It’s free and always will be.</h3>
+            </div>
+            <!-- form -->
+            <form action="submit" class="signup__form">
+                <div class="signup__form-name">
+                    <div class="signup__form-name-first">
+                        <input type="text" name="firstname" class="signup__form-input" placeholder="First name" />
+                    </div>
+                    <div class="signup__form-name-last">
+                        <input type="text" name="lastname" class="signup__form-input" placeholder="Last name" />
+                    </div>
+                </div>
+                <div class="signup__form-email">
+                    <input type="email" name="email" class="signup__form-input" placeholder="Mobile number or email" />
+                </div>
+                <div class="signup__form-password">
+                    <input type="password" name="paswword" class="signup__form-input" placeholder="New password" />
+                </div>
+                <h2 class="signup__form-birthday">Birthday</h2>
+                <!-- Dropdown -->
+                <ul class="dropdown">
+                    <button type="button" class="dropdown__btn">Nov</button>
+                    <ul class="dropdown__list">
+                        <li class="u-padding-s">Month</li>
+                        <li class="u-padding-s">Jan</li>
+                        <li class="u-padding-s">Feb</li>
+                        <li class="u-padding-s">Mar</li>
+                        <li class="u-padding-s">Apr</li>
+                        <li class="u-padding-s">May</li>
+                        <li class="u-padding-s">Jun</li>
+                        <li class="u-padding-s">Jul</li>
+                        <li class="u-padding-s">Aug</li>
+                        <li class="u-padding-s">Sep</li>
+                        <li class="u-padding-s">Oct</li>
+                        <li class="u-padding-s">Nov</li>
+                        <li class="u-padding-s">Dec</li>
+                    </ul>
+                </ul>
+                <ul class="dropdown">
+                    <button type="button" class="dropdown__btn">23</button>
+                    <ul class="dropdown__list">
+                        <li class="u-padding-m">Day</li>
+                        <li class="u-padding-m">1</li>
+                        <li class="u-padding-m">2</li>
+                        <li class="u-padding-m">3</li>
+                        <li class="u-padding-m">4</li>
+                        <li class="u-padding-m">5</li>
+                        <li class="u-padding-m">...</li>
+                    </ul>
+                </ul>
+                <ul class="dropdown">
+                    <button type="button" class="dropdown__btn">1992</button>
+                    <ul class="dropdown__list">
+                        <li class="u-padding-l">Year</li>
+                        <li class="u-padding-l">1985</li>
+                        <li class="u-padding-l">1986</li>
+                        <li class="u-padding-l">1987</li>
+                        <li class="u-padding-l">1988</li>
+                        <li class="u-padding-l">1989</li>
+                        <li class="u-padding-l">1990</li>
+                    </ul>
+                </ul>
+                <a href="#" class="signup__form-require-bd">Why do I need to provide my birthday?</a>
+                <div class="signup__form-radio-btn">
+                    <input type="radio" name="gender" value="male"> Female&nbsp;
+                    <input type="radio" name="gender" value="male"> Male
+                </div>
+                <div class="signup__form-agreement">
+                    <p class="signup__form-agreement-paragraph">
+                        By clicking Create Account, you agree to our
+                        <a href="#" target="_blank">Terms</a> and that you have read our
+                        <a href="#" target="_blank">Data Policy</a>, including our
+                        <a href="#" target="_blank">Cookie Use</a>. You may receive SMS Notifications from Facebook and can opt out at any time.
+                    </p>
+                </div>
+                <button class="signup__form-btn">Create account</button>
+            </form>
+            <p class="signup__business-page">
+                <a href="#" target="_blank">Create a Page</a> for a celebrity, band or business.
+            </p>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <ul class="footer__content-links">
+                <li class="footer__content-links-li class="active"">
+                    <ahref="#">English (US)</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">Español</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">Français (France)</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">中文(简体)</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">العربية</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">Português (Brasil)</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">Italiano</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">한국어</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">Deutsch</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">हिन्दी</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#">日本語</a>
+                </li>
+                <li class="footer__content-links-li">
+                    <a href="#"><button>+</button></a>
+                </li>
+            </ul>
+            <ul class="footer__content-links">
+                <li class="footer__content-links-li u-width"><a href="#">Sign Up</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Log In</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Messenger</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Facebook Lite</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Mobile</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Find Friends</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">People</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Pages</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Places</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Games</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Locations</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Celebrities</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Marketplace</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Groups</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Recipes</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Sports</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Look</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Moments</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Instagram</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">About</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Create Ad</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Create Page</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Developers</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Careers</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Privacy</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Cookies</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Ad Choices</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Terms</a></li>
+                <li class="footer__content-links-li u-width"><a href="#">Help</a></li>
+            </ul>
+            <div class="copyrigth">
+                <p>Facebook &copy; 2017</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
